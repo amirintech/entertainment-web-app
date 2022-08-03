@@ -7,7 +7,15 @@ import { ReactComponent as PlayIcon } from "../../assets/icon-play.svg";
 // Styles
 import "./Thumbnail.css";
 
-export default function Thumbnail({ small, medium, large, isBookmarked }) {
+export default function Thumbnail({
+  thumbnail,
+  isBookmarked,
+  forTrendingList,
+}) {
+  const images = forTrendingList ? thumbnail.trending : thumbnail.regular;
+  const { small, large } = images;
+  const medium = images?.medium;
+
   return (
     <figure className="thumbnail">
       <button className="bookmark-btn">

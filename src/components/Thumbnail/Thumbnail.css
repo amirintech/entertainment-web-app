@@ -1,10 +1,10 @@
-/* Thumbnail */
 .thumbnail {
+  margin: 0;
   padding: 0;
-  margin: 10rem;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 
 .thumbnail img {
@@ -86,10 +86,6 @@
   opacity: 0;
 }
 
-.thumbnail:hover .play-btn {
-  opacity: 1;
-}
-
 @media screen and (min-width: 768px) {
   .bookmark-btn {
     width: 32px;
@@ -100,5 +96,11 @@
 
   .play-btn {
     padding: 8px 2rem 8px 8px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .thumbnail:hover .play-btn {
+    opacity: 1;
   }
 }

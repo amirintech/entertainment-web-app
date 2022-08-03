@@ -28,10 +28,15 @@ body {
   background-color: var(--dark-blue);
   font-size: 1.5rem;
   font-weight: var(--light-font);
+  min-height: 100vh;
 }
 
 button {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Typography */
@@ -60,6 +65,10 @@ button {
 
 .font-tiny {
   font-size: 1.3rem;
+}
+
+.text-accent {
+  color: var(--red);
 }
 
 /* Buttons */
