@@ -1,20 +1,26 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
 .app__content {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
   padding: 1.5rem;
   padding-top: 0;
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+.app__content .input-container {
+  margin: 2.5rem 0 3rem;
 }
 
 @media screen and (min-width: 768px) {
   .app {
     margin: 2.5rem;
+  }
+
+  .app__content .input-container {
+    margin: 3.5rem 0 4.5rem;
   }
 }
 
@@ -22,10 +28,11 @@
   .app {
     display: grid;
     grid-template-columns: auto 1fr;
+    gap: 3.5rem;
     margin: 3.25rem;
   }
 
-  .app__content {
-    gap: 4rem;
+  .app__content .input-container {
+    margin-top: 0;
   }
 }

@@ -39,6 +39,7 @@ function App() {
             placeholder="Search for movies or TV series"
             value={searchString}
             onChange={getSearchString}
+            className="app__search-input"
           />
 
           {searchString && (
