@@ -18,13 +18,13 @@ export default function Thumbnail({
 
   return (
     <figure className="thumbnail">
-      <button className="bookmark-btn">
+      <div className="bookmark-btn">
         {isBookmarked ? (
           <BookmarkFullIcon className="bookmark-full-icon" />
         ) : (
           <BookmarkEmptyIcon className="bookmark-empty-icon" />
         )}
-      </button>
+      </div>
 
       <Picture small={small} medium={medium} large={large} alt="movie" />
 

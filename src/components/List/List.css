@@ -11,8 +11,8 @@
 
 .trending-list .movie .movie__body {
   position: absolute;
-  bottom: 1rem;
-  left: 1rem;
+  bottom: 3rem;
+  left: 2.5rem;
 }
 
 .trending-list::-webkit-scrollbar {
